@@ -1,3 +1,12 @@
+### INFO
+**Посмотреть SSH сертификат**<br/>
+**View SSH certificate**<br/>
+```
+cat ~/.ssh/id_rsa.pub
+```
+**Настройка SSH ключей:** [Tutorials](./https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-git-server-on-a-vps);
+
+
 ### Добавление в новый проект ssh ключа: <br/>Adding an ssh key to a new project:<br/>
 
 **Просмотреть как был скачен репо:**<br/>

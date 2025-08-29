@@ -1,15 +1,14 @@
 #!/bin/bash
 
-# Проверка, переданы ли аргументы
-# Check if arguments were passed
+# Проверка, переданы ли аргументы / Check if arguments were passed
 if [ -z "$1" ]; then
     echo "Использование: $0 <имя_ветки1> [имя_ветки2 ...]"
     echo "Пример: $0 branch1 branch2 branch3"
     exit 1
 fi
 
-# Все аргументы считаем ветками
-# All arguments are considered branches
+# Все аргументы считаем ветками / All arguments are considered branches
+
 branches=("$@")
 
 # Удаление удаленных веток
