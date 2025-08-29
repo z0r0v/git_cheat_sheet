@@ -4,7 +4,8 @@
 
 ### Оглавление / Table of contents:
 1. [комиты / commits](./commits.md);
+1. [продвинутое копирование веток / advanced copying branches](./copy_branches.md);
 2. [удаление веток / delete branch](./dellete_branch.md);
 3. [скрипт массового удаления / mass delete script](./automatization_scripts/README.md);
 4. [ssh](./ssh_key_new_project.md);
-5. [разное / all dock](./git.md)
+5. [разное / all dock](./git.md).
