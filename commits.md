@@ -1,8 +1,12 @@
 **Собирает коммиты ветки в один / Combines the commits of a branch into one**<br/>
 ```
-git merge --squash target_branch_name
-```
+# Для объединения последних N коммитов
+git rebase -i HEAD~N
 
+# Например, для последних 3 коммитов:
+git rebase -i HEAD~3
+
+```
 **Сменить ветку закомиченного коммита / Change branch of committed commit:**<br/>
 ```
 git cherry-pick <key commit>
@@ -32,4 +36,14 @@ git push --force
 **ЕСЛИ ЗАКОММИТИЛ ДА НЕ ТУДА изменения останутся / IF YOU COMMITTED IN THE WRONG WAY, THE CHANGES WILL REMAIN:**<br/>
 ```
 git reset HEAD^ --soft
+```
+
+**Для слияния веток:**<br/>
+
+```
+# При merge можно использовать squash
+git merge --squash feature-branch
+
+# Затем закоммитить изменения
+git commit -m "Объединенные изменения из feature-branch"
 ```
