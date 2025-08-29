@@ -84,29 +84,7 @@ git shelve - разобраться как работате скрытие!!!!!!
 **Настройка SSH ключей**<br/>
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-git-server-on-a-vps
 
-**Добавление в новый проект ssh ключа:**<br/>
-```
-Просмотреть как был скачен репо:	
-git remote -v	
 
-Получение из удаленного репозитория	
-git init -пустую папку	
-git remote add -f origin <url>	
-git fetch origin	
-
-Переключить на ssh:	
-git remote set-url origin git@github.com:USERNAME/REPOSITORY.git	
-git remote set-url origin git@gitlab.com:belvg/savilerowco.git	
-
-Узнать имя пользователя:	
-git config user.name	
-
-Сменить юзера в контейнере:	
-git config --global user.name "z0r0v"
-
-Сменить юзера в контейнере:	
-git config --global user.email 3767082@mail.ru	
-```
 
 **Показать список веток по параметру**<br/>
 ```
